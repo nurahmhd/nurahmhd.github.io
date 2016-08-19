@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test - Sign Up</title>
+	<style type="text/css">
+		
+		section {
+		    background-color: #00fff0;
+		    width: 505px;
+		    padding: 30px;
+		    margin: auto;
+		    font-family: sans-serif
+		}
+		
+		input.half {
+		    
+		    width: 225px;
+    		padding: 5px;
+   			margin: 5px;
+		}
+
+		input.full {
+		    width: 478px;
+		    padding: 5px;
+   			margin: 5px;
+		}
+		
+		input.signup {
+		    border-radius: 10px;
+		    background-color: green;
+		    padding: 5px;
+		    width: 100px;
+}
+	select {
+    	margin-bottom: 14px;
+    	margin-right: -5px ;
+	}
+
+	element.style {
+	    width: 195px;
+	    display: inline-block;
+	    margin-left: 10px;
+	    vertical-align: bottom;
+	}
+	
+	#whybirthday {
+    font-size: small;
+    margin-left: 10px;
+	}
+
+	</style>
+
+</head>
+<body>
+
+<section>
+
+<h1>Sign Up</h1>
+
+
+<h3>It's free and always will be.</h3>
+<input id="firstname" class="half" type="text" name="firstname"  placeholder="First name">
+<input id="lastname" class="half" type="text" name="lastname"  placeholder="Last name">
+<input id="emailmobile" class="full" type="text" name="Emailormobile number"  placeholder="Email or mobile number">
+<input id="reemailmobile" class="full" type="text" name="reemailmobile number"  placeholder="Re-enter Email or mobile number">
+ <input id="first" class="full" type="text" name="ReEmailormobile number"  placeholder="New password">
+
+<h3>Birthday</h3>
+ 
+<select>
+  <option value="mth">Month</option>
+  <option value="Jan">Jan</option>
+  <option value="Feb">Feb</option>
+  <option value="Mar">Mar</option>
+  <option value="Apr">Apr</option>
+  <option value="May">May</option>
+  <option value="Jun">Jun</option>
+  <option value="Jul">Jul</option>
+  <option value="Aug">Aug</option>
+  <option value="Sep">Sep</option>
+  <option value="Oct">Oct</option>
+  <option value="Nov">Nov</option>
+  <option value="Dec">Dec</option>
+</select>
+<select>
+  <option value="dd">Day</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+</select>
+<select>
+  <option value="yy">Year</option>
+  <option value="2016">2016</option>
+  <option value="2015">2015</option>
+  <option value="2014">2014</option>
+</select>
+<a id=whybirthday href="whybirthday">Why do I need to provide  my birthday?</a>
+<br/>
+<input type="radio" value="female" name="gender"/>
+			<label for="female">Female </label>
+			<input type="radio" value="male" name="gender" />
+			<label for="male">Male</label>
+
+<p>By clicking Sign Up, you aree to our  <a href="term.html">Terms</a> and that you have read our <a href="policy.html">Data Policy</a>, including our <a href="cookie.html">Cookie Use</a></p>
+<input class="signup" type="submit" value="Sign Up"/>
+</section>
+</body>
+</html>
