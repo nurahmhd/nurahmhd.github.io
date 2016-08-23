@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Layout</title>
+	<style type="text/css">
+
+	* {
+		margin: 0;
+		padding: 0;
+	}	
+
+	
+	section {
+		//width: 1000px;
+		//margin: 10px; 
+		//padding: 10px;
+		//background-color: blue;
+		//align-content: center;
+
+	}
+
+	footer {
+		margin: 10px;
+	}
+
+	.head {
+		//border: 2px solid gray;
+		width: 100px;
+		height: 70px;
+		background: gray;
+	}
+
+	.banner {
+		//border: 2px solid yellow ;
+		width: 1000px;
+		height: 85px;
+		margin-top:5px;
+		//margin-bottom: 5px;
+		background: yellow;
+	}
+
+	.box1 {
+	    width: 150px;
+	    height: 220px;
+	    background: green;
+	    margin-right: 5px;
+	    display: inline-block;
+	}
+	
+	.box2 {
+    	//border: 2px solid red;
+    	width: 841px;
+    	height: 100px;
+    	//float:right;
+    	//margin-bottom: 20px;
+    	background: red;
+    	display: inline-block;
+	}
+
+	.box3 {
+		//border: 2px solid black ;
+		width: 30%;
+    	height: 100px;
+		//float: left;
+		margin-right: 8px;
+		background: black;
+		display: inline-block;
+	}
+	
+	.box4 {
+		//border: 2px solid green;
+		width: 1000px;
+    	height: 100px;
+    	background: blue;
+	}
+
+
+	.content {
+	    //background: #00BCD4;
+	    max-width: 1000px;
+	    margin: 0 auto;
+	}
+
+	.box-hidden {
+	    width: 150px;
+	    height: 100px;
+	    margin-right: 5px;
+	    display: inline-block;
+	}
+
+	</style>
+
+</head>
+<body>
+<header>
+	<div class="content">
+		<div class=head></div>
+		<div class=banner></div>
+	</div>	
+</header>
+<section>
+	<div class="content">
+		<div class=box1></div>
+		<div style="vertical-align: top;">
+		<div>
+			<div class=box2></div>
+			<div>
+				<div class=box3></div>
+				<div class=box3></div> 
+				<div class=box3></div> 
+			</div>
+		</div>
+	</div>
+	
+</sect
+<section>
+	<div class="content">
+		<div class=box-hidden></div>
+		<div class=box2></div>
+	</div>
+	
+</section>
+<footer >
+	<div class="content">
+		<div class=box4></div>
+	</div>
+</footer>
+</body>
+</html>
