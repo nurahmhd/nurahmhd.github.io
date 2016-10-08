@@ -1,0 +1,24 @@
+* {
+    margin:0;
+    padding:0;
+
+}
+
+span#name-h1 {
+    font-size: 1.5em;
+    color: #0010ec;
+    text-shadow: 2px 2px 2px #000;
+}
+
+
+img {
+    vertical-align: middle;
+}
+
+img#nur-img {
+    background: blue;
+    border: #f9f9f9 double 10px;
+}
+
+
+
