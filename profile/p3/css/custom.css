@@ -1,0 +1,43 @@
+* {
+    margin:0;
+    padding:0;
+
+}
+
+span#name-h1 {
+    font-size: 1.5em;
+    color: #0010ec;
+    text-shadow: 2px 2px 2px #000;
+}
+
+span.myweight {
+    background: #007eec;
+    padding: 3px 15px;
+    border-radius: 15px;
+    color: white;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px grey;
+    box-shadow: 1px 1px 1px grey;
+}
+
+img {
+    vertical-align: middle;
+}
+
+img#nur-img {
+    /*background: rgba(23, 14, 138, 0.76); */
+    background: blue;
+    border: #f9f9f9 double 10px;
+}
+
+
+#homewrap {
+    background: url(../images/lavendergarden.jpeg) no-repeat center bottom;
+    margin-top: -50px;
+    padding-top: 120px;
+    text-align: center;
+    background-position: center top;
+    min-height: 650px;
+    width: 100%;
+    background-size: cover;
+}
