@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Nurah Muhammad Profile</title>
   <link href="css/styles.css" rel="stylesheet" />
 	<!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
@@ -12,14 +14,9 @@
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
-  <link rel="stylesheet" href="http://www.jasonlusk.com/scroll/css/libraries.min.css"/>
+  <!-- Animate Scroll CSS -->
+  <link rel="stylesheet" href="scroll/css/libraries.min.css"/>
   
-  <script src="http://www.jasonlusk.com/scroll/js/vendor/modernizr.min.js"></script>
-  <script src="http://www.jasonlusk.com/scroll/js/jquery.min.js"></script>
-  <script src="http://www.jasonlusk.com/scroll/js/vendor/TweenMax.min.js"></script>
-  <script src="http://www.jasonlusk.com/scroll/js/vendor/ScrollToPlugin.min.js"></script>
-  <script src="http://www.jasonlusk.com/scroll/js/vendor/EasePack.min.js"></script>
-  <script src="http://www.jasonlusk.com/scroll/js/animate-scroll.js"></script>
 </head>
 <body>
 
@@ -29,24 +26,32 @@
 
         <nav class="navbar navbar-inverse navbar-static-top" role="navigation" style="margin-bottom: 0px;">
             <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skill</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+                <div id="navbar-main">
+                            <!-- Fixed top navbar -->
+                            <div class="navbar navbar-inverse navbar-fixed-top">
+                                <div class="container">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                        <span class="glyphicon glyphicon-align-justify" style="font-size:24px; color:white "></span>  
+                                        <span style="font-size:24px; color:white"> Menu</span>
+                                        </button>
+                                    </div>
+                                    <div class="navbar-collapse collapse">
+                                        <ul class="nav navbar-nav">
+                                            <li> <a href="#home" class="smoothScroll">
+                                                <span class="glyphicon glyphicon-home"></span> Home</a> 
+                                            </li>
+                                            <li> <a href="#about" class="smoothScroll"> About</a> </li>
+                                            <li> <a href="#skills" class="smoothScroll"> Skills</a> </li>
+                                            <li> <a href="#services" class="smoothScroll">Services</a> </li>
+                                            <li> <a href="#contact" class="smoothScroll"> Contact</a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
             </div>
+            <br>
         </nav>
 
     </div>
@@ -140,7 +145,7 @@
                       width: 37px;
                       height: 37px;
                       cursor: pointer;
-                      background: url(../img/a11.png) no-repeat;
+                      background: url(img/a11.png) no-repeat;
                       overflow: hidden;
                   }
                   .jssora11l { background-position: -11px -41px; }
@@ -164,14 +169,31 @@
       <hr>
       <!-- HOME -->
       <div  class="container" id="home" name="home">
-        <img id="nur-img" class="img-circle" src="images/nurah.png">
-        <span id="name-h1" >Nurah Binti Muhammad</span></h1>
+      <br>
+        <div class="row">
+        <br>
+        <div id="homewrap">
+          <img id="nur-img" class="img-circle" src="images/nurah.png">
+          <h1 data-animate-scroll='{"rotationX":"30", "duration": "1","scaleX": "0","scaleY": "0"}'><span id="name-h1" >Nurah Binti Muhammad</span></h1>
+          <p data-animate-scroll='{
+          "x": "0", 
+          "y": "0", 
+          "scaleX": "0.25",
+          "scaleY": "0.25", 
+          "alpha": "0", 
+          "duration": "1.5",
+          "rotation":"180"}'>Passionate Person</p>
+          </div>
+        </div>
       </div>
       <! home -->
 
         <!-- ABOUT -->
       <div class="container" id="about" name="about">
-              <h1 class="centered"><span class="myweight">About</span> Me</h1>
+        <br>
+          <div class="row">
+          <br>
+              <h1 class="centered" data-animate-scroll='{"scaleX": "1.1","scaleY": "1.1","rotation": "-2","alpha": "1", "duration": "0.5"}'><span class="mytitle">About</span> Me</h1>
               <hr>
               <div class="col-lg-6">
                   <p data-animate-scroll='{"duration": "1","scaleX": "0","scaleY": "0"}'> I am a Malaysian and starting to offer Front End Website Designer service. I'm familiar with Backend programming and infrastructure services </p>
@@ -180,8 +202,8 @@
               <div class="col-lg-6">
                   <p data-animate-scroll='{"duration": "1.5","scaleX": "0","scaleY": "0"}'> I like to  try something new.</p>
               </div>
-              
-          </div>
+             </div> 
+        </div>
 
           <!-- row -->
 
@@ -190,8 +212,9 @@
       <!-- SKILLS -->
       <div class="container" id="skills" name="skills">
           <br>
-          <div class="row white centered">
-              <h1 class="centered">List of <span class="myweight">Skills</span></h1>
+          <div class="row">
+          <br>
+              <h1 class="centered" data-animate-scroll='{"scaleX": "1.1","scaleY": "1.1","rotation": "-2","alpha": "1", "duration": "0.5"}'>List of <span class="mytitle">Skills</span></h1>
               <hr>
               <br>
               <br>
@@ -246,27 +269,51 @@
                   <br>
                   <div class="row">
                       <br>
-                      <h1 class="centered"><span class="myweight">Services</span></h1>
+                      <h1 class="centered" data-animate-scroll='{"scaleX": "1.1","scaleY": "1.1","rotation": "-2","alpha": "1", "duration": "0.5"}'><span class="mytitle">Services</span></h1>
                       
                   </div>
                   <div class="container">
                       <div class="row">
-                      <!-- Service: UPWORK -->
-                          <div class="col-md-4 ">
-                              <div class="grid mask" >
-                                  <h5>WEB DEVELOPMENT</h5>
-                              </div>                      
-                          </div>
-                          <div class="col-md-4 ">
-                              <div class="grid mask" >
-                                  <h5>SERVER ADMINISTRATION</h5>              
-                              </div>                      
-                          </div>
+                                <div class="col-md-4 centered" data-animate-scroll='{"duration": "1.9","scaleX": "0","scaleY": "0"}'>
+                                    <img class="img img-circle" src="images/webdev.png" height="120px" width="120px" alt="">
+                                    <br>
+                                    <h4><b>Web Development</b></h4>
+                                    <p>Develop website </p>
+                                </div>                   
+                                <div class="col-md-4 centered" data-animate-scroll='{"duration": "1.9","scaleX": "0","scaleY": "0"}'>
+                                    <img class="img img-circle" src="images/server.png" height="120px" width="120px" alt="">
+                                    <br>
+                                    <h4><b>SERVER ADMINISTRATION</b></h4>
+                                    <p>Installation, configuration and audit for LinuxOperating System</p>
+                                </div>                   
+                        </div>
+                    </div>
+
                       </div>
                   </div>
 
             <!-- Contact -->
                   <div class="container" id="contact" name="contact">
+                      <div class="row">
+                          
+                          <h1 class="centered" data-animate-scroll='{"scaleX": "1.1","scaleY": "1.1","rotation": "-2","alpha": "1", "duration": "0.5"}'><span class="mytitle">Contact</span></h1>       
+                          <div class="col-sm-6 col-md-3" data-animate-scroll='{"x": "0", 
+                            "y": "-100", 
+                            "scaleX": "0.25",
+                            "scaleY": "0.25", 
+                            "alpha": "0", 
+                            "duration": "1.5",
+                            "rotation":"45"}'>
+                            <p>
+                            <span class="fa fa-home"></span>Kuala Lumpur, Malaysia<br/>
+                            <span class="fa fa-mobile"></span> +6019 2766 963<br/>
+                            <span class="fa fa-envelope"></span> <a href="#"> nurahmhd@gmail.com</a> <br/>
+                            <span class="fa fa-facebook"></span> <a href="https://www.facebook.com/nurah.usm">Nurah Binti Muhammad </a> <br/>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
       <!-- Bootstrap core JavaScript
          ================================================== -->
@@ -280,8 +327,29 @@
          <!-- jssor slider scripts-->
          <!-- use jssor.slider.debug.js for debug -->
          <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
-         <script>
 
+         <!-- Animate Scroll javascript -->
+         <script src="scroll/js/vendor/modernizr.min.js"></script>
+         <script src="scroll/js/jquery.min.js"></script>
+         <script src="scroll/js/vendor/TweenMax.min.js"></script>
+         <script src="scroll/js/vendor/ScrollToPlugin.min.js"></script>
+         <script src="scroll/js/vendor/EasePack.min.js"></script>
+         <script src="scroll/js/animate-scroll.js"></script>
+
+         <!-- Bootstrap core JavaScript
+             ================================================== -->
+         <!-- Placed at the end of the document so the pages load faster -->
+         
+         <script src="js/bootstrap.min.js"></script>
+         
+         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+         <script type="text/javascript" src="scroll/js/smoothscroll.js"></script>
+         <script src="https://kswedberg.github.io/jquery-smooth-scroll/src/jquery.smooth-scroll.js"></script>
+         <script type="text/javascript" src="js/jquery.func.js"></script>
+
+         <script src="scroll/js/vendor/foundation.min.js"></script>
+         <script>
              jQuery(document).ready(function ($) {
                  var options = {
                      $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
@@ -343,28 +411,18 @@
                  //responsive code end
              });
          </script>
-                 <!-- Bootstrap core JavaScript
-                     ================================================== -->
-                 <!-- Placed at the end of the document so the pages load faster -->
-                 
-                 <script src="js/bootstrap.min.js"></script>
 
-                 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-                 <script type="text/javascript" src="js/smoothscroll.js"></script>
-                 <script src="https://kswedberg.github.io/jquery-smooth-scroll/src/jquery.smooth-scroll.js"></script>
-                 <script type="text/javascript" src="js/jquery.func.js"></script>
-
-                 <script src="http://www.jasonlusk.com/scroll/js/vendor/foundation.min.js"></script>
+         
                          
          <script>
-             $(document).animateScroll();
-             $(document).on('click','.navbar-collapse.in',function(e) {
-             if( $(e.target).is('a')  ) {
-                 $(this).collapse('hide');
-             }
+               $(document).animateScroll();
+               $(document).on('click','.navbar-collapse.in',function(e) {
+               if( $(e.target).is('a')  ) {
+                   $(this).collapse('hide');
+               }
 
-         });
-         </script>
+           });
+           </script>
 
 </body>
 </html>
