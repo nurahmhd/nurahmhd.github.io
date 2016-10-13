@@ -10,6 +10,14 @@ span#name-h1 {
     text-shadow: 2px 2px 2px #000;
 }
 
+span.mytitle {
+    padding: 3px 15px;
+    border-radius: 15px;
+    color: yellow;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px grey;
+    box-shadow: 1px 1px 1px grey;
+}
 
 img {
     vertical-align: middle;
@@ -20,5 +28,24 @@ img#nur-img {
     border: #f9f9f9 double 10px;
 }
 
+span.mytitle {
+    background: #007eec;
+    padding: 3px 15px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px grey;
+    box-shadow: 1px 1px 1px grey;
+}
 
+#homewrap {
+    background: url() no-repeat center bottom;
+    margin-top: -50px;
+    padding-top: 120px;
+    text-align: center;
+    background-position: center top;
+    min-height: 650px;
+    width: 100%;
+    background-size: cover;
+}
 
