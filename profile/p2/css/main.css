@@ -1,0 +1,32 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+span#name-h1 {
+    font-size: 1.5em;
+    color: #0010ec;
+    text-shadow: 2px 2px 2px #000;
+}
+
+img {
+    vertical-align: middle;
+}
+
+img#nur-img {
+    /*background: rgba(23, 14, 138, 0.76); */
+    background: blue;
+    border: #f9f9f9 double 10px;
+    vertical-align:center;
+}
+
+#homewrap {
+    background: url() no-repeat center bottom;
+    margin-top: -50px;
+    padding-top: 120px;
+    text-align: center;
+    background-position: center top;
+    min-height: 550px;
+    width: 100%;
+    background-size: cover;
+}
