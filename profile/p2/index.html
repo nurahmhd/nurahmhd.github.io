@@ -14,8 +14,24 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+
+    <!-- Animate Scroll CSS -->
+    <link rel="stylesheet" href="scroll/css/libraries.min.css"/>
+
+    <!-- unitegallery CSS -->
+        
     <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <link rel='stylesheet' href='ug/css/unite-gallery.css' type='text/css' > 
+    <link rel='stylesheet' href='ug/themes/default/ug-theme-default.css' type='text/css' />
+
+
+    <!-- Animate Scroll CSS -->
+    <link rel="stylesheet" href="scroll/css/libraries.min.css"/>
+
+    <!-- Custom CSS -->
+    <link href="css/main.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,6 +40,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
 </head>
 
 <body>
@@ -31,7 +48,7 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <div id="sidebar-wrapper">
+        <div id="sidebar-wrapper" style="background:blue">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="#home">
@@ -57,71 +74,186 @@
         <!-- /#sidebar-wrapper -->
 
         <!-- Page Content -->
-        <div id="home">
+        <div id="page" ">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
-                        <h1>My Profile</h1>
-
+                    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><span class="glyphicon glyphicon-align-justify" style="font-size:24px; color:blue ; border-radius: 10px">MENU</span></a>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- /#home-wrapper -->
-        <div id="about">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1>About</h1>
-                    </div>
+
+            <!-- HOME -->
+            <div  class="container" id="home" name="home">
+            
+              <div class="row">
+              
+              <div id="homewrap">
+                <img id="nur-img" class="img-circle" src="images/nurah.png">
+                <h1 data-animate-scroll='{"rotationX":"30", "duration": "1","scaleX": "0","scaleY": "0"}'><span id="name-h1" >Nurah Binti Muhammad</span></h1>
+                <p data-animate-scroll='{
+                "x": "0", 
+                "y": "0", 
+                "scaleX": "0.25",
+                "scaleY": "0.25", 
+                "alpha": "0", 
+                "duration": "1.5",
+                "rotation":"180"}'>Passionate Person</p>
+                </div>
+              </div>
+            </div>
+            <! home -->
+
+            <!-- about -->
+            <div class="container" id="about">
+                <div class="container-fluid">
+                    <div class="row">
+                            <h1 class="centered" data-animate-scroll='{"scaleX": "1.1","scaleY": "1.1","rotation": "-2","alpha": "1", "duration": "0.5"}'><span >About</span> Me</h1>
+
+                        <div class="col-lg-6">
+                            <p data-animate-scroll='{"duration": "1","scaleX": "0","scaleY": "0"}'> I am a Malaysian and starting to offer Front End Website Development service. I'm also familiar with Backend programming and infrastructure services </p>
+                        </div>
+                        <div class="col-lg-6">
+                            <p data-animate-scroll='{"duration": "1.5","scaleX": "0","scaleY": "0"}'> I like to  try something new.</p>
+                        </div>
+                    </div> 
                 </div>
             </div>
-        </div>
-        <!-- /#about-wrapper -->
+            <!-- /#about -->
 
-        <div id="skills">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1>Skills</h1>
+                <div class="container" id="skills">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <h1 class="centered" data-animate-scroll='{"scaleX": "1.1","scaleY": "1.1","rotation": "-2","alpha": "1", "duration": "0.5"}'>List of <span>Skills</span></h1>
+                                <div id="gallery" style="margin:0px auto;display:none;">
+
+                                    <img alt="HTML 5" src="images/html5.jpg" data-image="images/html5.jpg"
+                                    data-description="HTML 5 " 
+                               
+                                    <img alt="CSS 3" src="images/css3.jpg"
+                                    data-image="images/css3.jpg"
+                                    data-description="CSS 3">
+
+                                    <img alt="Javascript" src="images/css3.jpg"
+                                    data-image="images/js.jpg"
+                                    data-description="Javascript">
+
+                                    <img alt="Bootstrap" src="images/bootstrap.jpg" data-image="images/bootstrap.jpg"
+                                    data-description="Bootstrap ">
+                                                
+                                    <img alt="VMware" src="images/vmware.jpg"
+                                        data-image="images/vmware.jpg"
+                                        data-description="VMware">
+                                    
+                                    <img alt="Perl" src="images/perl.jpg"
+                                        data-image="images/perl.jpg"
+                                        data-description="Perl">
+                                </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- /#skills-wrapper -->
+                <!-- /#skills-wrapper -->
 
-        <div id="services">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1>Services</h1>
+                <div class="container" id="services">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <h1 class="centered" data-animate-scroll='{"scaleX": "1.1","scaleY": "1.1","rotation": "-2","alpha": "1", "duration": "0.5"}'><span>Services</span></h1>
+                                
+                        </div>
+                        <div class="container">
+                                <div class="row">
+                                
+                                <!-- Services -->
+                                      <div class="col-md-4 centered" data-animate-scroll='{"duration": "1.9","scaleX": "0","scaleY": "0"}'>
+                                          <img class="img img-circle" src="images/webdev.png" height="120px" width="120px" alt="">
+                                          <br>
+                                          <h4><b>Web Development</b></h4>
+                                          <p>Develop website </p>
+                                      </div>                   
+                                      <div class="col-md-4 centered" data-animate-scroll='{"duration": "1.9","scaleX": "0","scaleY": "0"}'>
+                                          <img class="img img-circle" src="images/server.png" height="120px" width="120px" alt="">
+                                          <br>
+                                          <h4><b>SERVER ADMINISTRATION</b></h4>
+                                          <p>Installation, configuration and audit for LinuxOperating System</p>
+                                      </div>                   
+                                  </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- /#services-wrapper -->
+                <!-- /services -->
 
-        <div id="contact">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1>Contact</h1>
+                                  
+                 <!-- Contact -->
+                  <div class="container" id="contact" name="contact">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <h1 class="centered" data-animate-scroll='{"scaleX": "1.1","scaleY": "1.1","rotation": "-2","alpha": "1", "duration": "0.5"}'><span >Contact</span></h1>
+                      </div>       
+                      <div class="col-sm-6 col-md-3" data-animate-scroll='{"x": "0", 
+                            "y": "-100", 
+                            "scaleX": "0.25",
+                            "scaleY": "0.25", 
+                            "alpha": "0", 
+                            "duration": "1.5",
+                            "rotation":"45"}'>
+                            <p>
+                            <span class="fa fa-home"></span>Kuala Lumpur, Malaysia<br/>
+                            <span class="fa fa-mobile"></span> +6019 2766 963<br/>
+                            <span class="fa fa-envelope"></span> <a href="#"> nurahmhd@gmail.com</a> <br/>
+                            <span class="fa fa-facebook"></span> <a href="https://www.facebook.com/nurah.usm">Nurah Binti Muhammad </a> <br/>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- /#services-wrapper -->
+            <!-- /#contact -->
 
+        </div>
+        <!-- /#page-content-wrapper -->
     </div>
     <!-- /#wrapper -->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <!-- Bootstrap core JavaScript
+         ================================================== -->
+         <!-- Placed at the end of the document so the pages load faster -->
+         <script src="js/jquery-1.9.1.min.js"></script>
+         <script src="js/bootstrap.min.js"></script>
+         <script src="js/docs.min.js"></script>
+         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+         <script src="js/ie10-viewport-bug-workaround.js"></script>
 
+         <!-- jssor slider scripts-->
+         <!-- use jssor.slider.debug.js for debug -->
+         <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+
+         <!-- Animate Scroll javascript -->
+         <script src="scroll/js/vendor/modernizr.min.js"></script>
+         <script src="scroll/js/jquery.min.js"></script>
+         <script src="scroll/js/vendor/TweenMax.min.js"></script>
+         <script src="scroll/js/vendor/ScrollToPlugin.min.js"></script>
+         <script src="scroll/js/vendor/EasePack.min.js"></script>
+         <script src="scroll/js/animate-scroll.js"></script>
+
+         <!-- Bootstrap core JavaScript
+             ================================================== -->
+         <!-- Placed at the end of the document so the pages load faster -->
+         
+         <script src="js/bootstrap.min.js"></script>
+         
+         <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+
+         <script type="text/javascript" src="scroll/js/smoothscroll.js"></script>
+         <script src="js/jquery.smooth-scroll.js"></script>
+         <script type="text/javascript" src="js/jquery.func.js"></script>
+
+    <!-- unitegallery -->
+    <script type='text/javascript' src='ug/js/jquery-11.0.min.js'></script>         
+    <script type='text/javascript' src='ug/themes/carousel/ug-theme-carousel.js'></script>
+    <script type='text/javascript' src='ug/js/unitegallery.min.js'></script>
+        
+    
     <!-- Menu Toggle Script -->
     <script>
     $("#menu-toggle").click(function(e) {
@@ -129,6 +261,23 @@
         $("#wrapper").toggleClass("toggled");
     });
     </script>
+
+    <script type="text/javascript"> 
+            jQuery(document).ready(function(){ 
+                jQuery("#gallery").unitegallery(); 
+            }); 
+    </script>
+    
+    <script>
+          $(document).animateScroll();
+          $(document).on('click','.navbar-collapse.in',function(e) {
+          if( $(e.target).is('a')  ) {
+              $(this).collapse('hide');
+          }
+
+      });
+      </script>
+    
 
 </body>
 
